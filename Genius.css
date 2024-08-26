@@ -1,0 +1,359 @@
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #333;
+}
+
+.top-header {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.shop-name {
+    font-size: 36px;
+    margin: 0;
+}
+
+.hero {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #6a3410;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#featured-products .products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    max-width: 250px;
+    margin: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+}
+
+.footer {
+    background-color: #8b4513;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f3f3;
+    color: #8b4513;
+}
+
+.top-header {
+    background: linear-gradient(135deg, #8b4513, #d2691e, #f3e5ab); 
+    color: black;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid black;
+}
+.top-header:hover{
+    color: white;
+}
+
+.shop-name {
+    font-size: 48px;
+    font-family: 'Georgia', serif;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.shop-name span {
+    color: #ffd700; /* Accent color for part of the text */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero {
+    background-color: #f8f8f8;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+.hero h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    background-color: #8b4513;
+    color: black;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #6a3410;
+}
+
+.section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#featured-products .products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.product {
+    max-width: 250px;
+    margin: 20px;
+    background-color: #8b4513;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 15px 0 10px;
+}
+
+.footer {
+    background-color: linear-gradient(135deg, #8b4513, #d2691e, #f3e5ab);
+    color: black;
+    padding: 20px;
+    text-align: center;
+
+}
+.hero {
+    position: relative;
+    text-align: center;
+    color: black;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #8b4513, #d2691e, #f3e5ab); 
+    z-index: 1;
+    pointer-events: none;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2; /* Ensures content is above the overlay */
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    filter: grayscale(50%); /* Optional: adds a grayscale effect */
+}
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 50%; /* Circular mask */
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    object-fit: cover;
+    clip-path: circle(50% at 50% 50%); /* Ensures the image is clipped to a circle */
+}
+.hero-image-container {
+    display: inline-block;
+    padding: 8px;
+    background: linear-gradient(45deg, #8b4513, #d2691e, #ffd700);
+    border-radius: 15px; /* Matches the image's border radius */
+}
+
+.hero-image {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+.hero-content {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    color: white;
+    background: #8b4513; /* Semi-transparent black background */
+    padding: 20px;
+    border-radius: 10px;
+    z-index: 2;
+    top: -20px; /* Position it slightly above the image */
+}
+
+.hero-image {
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #8b4513, #d2691e, #f3e5ab); /* Brown to light tan gradient */
+    color: #333;
+}
+</style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Genius Place - Where Coffee Meets Creativity</title>
+    <link rel="stylesheet" href="genius.css">
+</head>
+<body>
+    <!-- Header with Shop Name -->
+    <header class="top-header">
+        <h1 class="shop-name">Genius Place</h1>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <img src="coffee3333.webp" alt="Genius Place Coffee Shop" class="hero-image">
+            <h2>Where Coffee Meets Creativity</h2>
+            <a href="#menu" class="cta-button">Explore Our Menu</a>
+        </div>
+    </section>
+
+    <!-- Rest of the Content -->
+    <main>
+        <section id="featured-products" class="section">
+            <h2>Featured Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="coff333.jpg" alt="Coffee 1">
+                    <h3>Espresso</h3>
+                    <p>Rich and full-bodied with a creamy finish.</p>
+                </div>
+                <div class="product">
+                    <img src="cogfffe.jpg" alt="Coffee 2">
+                    <h3>Cappuccino</h3>
+                    <p>A perfect blend of espresso and steamed milk.</p>
+                </div>
+                <div class="product">
+                    <img src="coffe new.jpg" alt="Coffee 3">
+                    <h3>Latte</h3>
+                    <p>Smooth and velvety with a hint of sweetness.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <h2>About Genius Place</h2>
+            <p>Genius Place is a haven for coffee lovers and creative minds. Our mission is to provide a space where you can enjoy high-quality coffee in a warm and welcoming atmosphere.</p>
+            <a href="#contact" class="cta-button">Learn More</a>
+        </section>
+
+        <section id="testimonials" class="section">
+            <h2>Customer Testimonials</h2>
+            <div class="testimonial">
+                <p>"The best coffee shop in town! The ambiance is perfect for working or relaxing."</p>
+                <p>- Happy Customer</p>
+            </div>
+            <div class="testimonial">
+                <p>"I love the unique flavors and the friendly staff. Genius Place never disappoints!"</p>
+                <p>- Regular Visitor</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Genius Place. All rights reserved.</p>
+    </footer>
